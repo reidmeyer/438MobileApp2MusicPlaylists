@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <TextView
+            android:id="@+id/song_title1"
+            android:layout_width="400dp"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            app:autoSizeTextType="uniform"
+    />
+
+
+    <TextView
+            android:id="@+id/artist_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artist: "
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@+id/song_title1"
+            android:layout_marginStart="12dp"
+    />
+
+    <TextView
+            android:id="@+id/artist_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/artist_label"
+            app:layout_constraintTop_toBottomOf="@id/song_title1"
+            android:textSize="18sp"
+    />
+
+</android.support.constraint.ConstraintLayout>
